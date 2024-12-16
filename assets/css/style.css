@@ -526,8 +526,8 @@ section {
   width: 350px; /* Increased width */
   height: 350px; /* Increased height */
   min-height: 350px;
-  margin-left: 40px; /* Added margin to move the image slightly away from the text */  
-}
+  margin-left: 100px; /* Added margin to move the image slightly away from the text */  
+} 
 
 .about .content h3 {  
   font-weight: 700;
