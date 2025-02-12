@@ -30,7 +30,7 @@ h6 {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  visibility: hidden; 
+  visibility: hidden;
   opacity: 0;
   right: 15px;
   bottom: 15px;
@@ -42,7 +42,7 @@ h6 {
   transition: all 0.4s; 
 }
 
-.back-to-top i { 
+.back-to-top i {
   font-size: 28px; 
   color: #ff0000;
   line-height: 0;
@@ -57,7 +57,6 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
- 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -77,45 +76,62 @@ h6 {
   background: rgba(25, 28, 31, 0.8);
 }
 
-/* Hero Section - Laptop View */
+/*--------------------------------------------------------------
+# Hero Section - Laptop View
+--------------------------------------------------------------*/
 @media (min-width: 992px) {
   #hero .hero-container {
-    max-width: 800px; /* Limit the width for better focus */
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding: 10px 0; /* Reduce top padding to move content up */    
-    position: relative; /* Allow precise positioning */ 
+    padding: 10px 0;
+    position: relative;
   }
 
   #hero img {
-    width: 200px; /* Slightly larger logo for laptop view */
+    width: 280px;  /* Large logo for desktop */
     height: auto;
-    margin-bottom: 10px; /* Decrease space below the logo */
-    margin-top: -50px; /* Move the logo upwards */
+    margin-bottom: -50px;
+    margin-top: -50px;
   }
 
   #hero h1 {
-    font-size: 2.5rem; /* Larger heading for better visibility */
-    margin-top: -5%; /* Adjust margin to align visually */
+    font-size: 2.5rem;
+    margin-top: -5%;
   }
 
   #hero h2 {
-    font-size: 1.5rem; /* Increase subtitle size */
-    margin-top: 2%; /* Adjust spacing below h1 */
+    font-size: 1.5rem;
+    margin-top: 2%;
   }
 
   #hero b {
-    font-size: 1.2rem; /* Slightly larger bold text for emphasis */
+    font-size: 1.2rem;
   }
 
   #hero .btn-scroll {
-    margin-top: 30px; /* Add space between content and button */
+    margin-top: 30px;
     font-size: 1.5rem;
   }
+}
+
+/*--------------------------------------------------------------
+# Hero Section - Mobile View
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  img:first-of-type {  
+    margin-top: 140px !important;  /* Push down logo */
+    width: 150px !important;  /* Adjust size */
+  }
+
+  h2 {
+    margin-top: 40px !important;  /* Add spacing below logo */
+  }
+
+  img[alt="Filmfest Logo"] {
+    margin-bottom: -30px !important;  /* Adjust space before next section */
+  }
 } 
-
-
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -526,8 +542,8 @@ section {
   width: 350px; /* Increased width */
   height: 350px; /* Increased height */
   min-height: 350px;
-  margin-left: 5px; /* Added margin to move the image slightly away from the text */  
-}       
+  margin-left: 65px; /* Added margin to move the image slightly away from the text */ 
+}
 
 .about .content h3 {  
   font-weight: 700;
@@ -719,7 +735,7 @@ section {
 .previous-events .photo-box { 
   position: relative;
   overflow: hidden;
-  border-radius: 10px; 
+  border-radius: 10px;
   margin-bottom: 20px;  
 }
 
@@ -854,7 +870,7 @@ section {
 
 .about-sms h2 {
   font-size: 2.5rem;
-  color: #333; /* Red heading color */
+  color: #d32f2f; /* Red heading color */
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -874,7 +890,7 @@ section {
   text-align: center; 
   font-size: 2rem;
   color: #333;  
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .team-table-container {
@@ -1058,7 +1074,7 @@ section {
 
 #footer .social-links {
   margin: 0 0 40px 0;
-}
+} 
 
 #footer .social-links a {
   font-size: 18px;
@@ -1084,7 +1100,4 @@ section {
 #footer .copyright {
   margin: 0 0 5px 0; 
 } 
- 
-
-
- 
+  
