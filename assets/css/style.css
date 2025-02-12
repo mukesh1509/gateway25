@@ -1066,14 +1066,14 @@ section {
 }
 
 #footer p {
-  font-size: 15px; /* Corrected font size */
+  font-size: 15px; /* Corrected font size */ 
   font-style: italic; 
   padding: 0;
   margin: 0 0 40px 0;
 }
 
 #footer .social-links {
-  margin: 0 0 40px 0;
+  margin: 0 0 40px 0; 
 } 
 
 #footer .social-links a {
@@ -1100,4 +1100,3 @@ section {
 #footer .copyright {
   margin: 0 0 5px 0; 
 } 
-  
