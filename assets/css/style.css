@@ -76,101 +76,181 @@ h6 {
   background: rgba(25, 28, 31, 0.8);
 }
 
-/*--------------------------------------------------------------
-# Hero Section - Laptop View
---------------------------------------------------------------*/
-@media (min-width: 992px) {
-  #hero .hero-container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-  }
-
-  #hero img {
-    width: 280px;
-    height: auto;
-    margin-bottom: -50px;
-    margin-top: -50px;
-  }
-
-  #hero h1 {
-    font-size: 2.5rem;
-    margin-top: -5%;
-  }
-
-  #hero h2 {
-    font-size: 1.5rem;
-    margin-top: 2%;
-  }
-
-  #hero b {
-    font-size: 1.2rem;
-  }
-
-  #hero .btn-scroll {
-    margin-top: 30px;
-    font-size: 1.5rem;
-  }
+/* ======= General Styling ======= */
+#hero {
+  text-align: center;
+  padding-top: 50px;
 }
 
-/*--------------------------------------------------------------
-# Hero Section - Mobile View (Max 768px)
---------------------------------------------------------------*/
-@media (max-width: 768px) {
-  #hero img:first-of-type {  
-    margin-top: 140px;  /* Push down logo */
-    width: 150px;  /* Adjust size */
-  }
+.hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-  #hero h2 {
-    margin-top: 80px;  /* Add spacing below logo */
-    font-size: 1rem;  /* Adjust text size */
-  }
 
-  #hero img[alt="Filmfest Logo"] {
-    margin-bottom: -30px;  /* Adjust space before next section */ 
-  }
-
-  #hero b {
-    font-size: 1.1rem; 
-  } 
+/* ===== Title Sponsor Section ===== */
+.title-sponsor {
+  font-size: 20px;  /* Bigger for better visibility */
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 50px;    
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 } 
 
-@media (max-width: 768px) {
-  /* Adjust "Title Sponsor" Position */
-  #hero h2:first-of-type {   
-    margin-top: 120px !important;  /* Increase spacing */
-    font-size: 0.9rem;  /* Adjust text size */
+.presents-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  position: relative; 
+  top: 160px; /* Reduce this value to move it up */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+} 
+
+/* ===== Gateway Logo (Fix Overlapping) ===== */
+.gateway-logo {
+  width: 200px; 
+  margin-top: 30px;  /* Adjust this value as needed */
+  margin-bottom: -50px;  
+} 
+
+/* ===== Sponsor Logos ===== */
+.sponsor-logo {
+  width: 160px;    
+  height: auto;
+  margin-bottom: -160px;   
+}
+
+/* ===== Sponsors Section ===== */
+.sponsor-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;  /* Better spacing */
+  margin-top: 15px;
+  width: 100%;  
+  max-width: 1200px;
+}
+
+.sponsor {
+  flex: 1;
+  min-width: 160px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.sponsor h3 {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* ===== Sponsor Logos (Standardized) ===== */
+.sponsor img {
+  width: 100px; /* Unified size */
+  height: auto; 
+} 
+
+/* ===== Print Sponsors (Multiple Logos) ===== */
+.print-sponsors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; 
+} 
+
+.print-sponsors img {
+  width: 90px;
+  height: auto;
+}
+
+.event-sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px; /* Adjust spacing */
+  max-width: 110%;  
+}
+
+.event-sponsors img {
+  width: 120px; /* Adjust width */
+  height: auto; 
+} 
+
+/* ===== Spacer for Proper Alignment ===== */
+.spacer {
+  height: 5px;
+}
+
+/* ===== Mobile Screen Alignment ===== */   
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+      width: 90%;
+      text-align: center;
   }
 
-  /* Adjust First Logo */ 
-  #hero img:first-of-type { 
-    margin-top: 5px !important;  /* Push logo down */
-    width: 140px !important; /* Adjust size */
+  .title-sponsor { 
+    font-size: 16px;  
+    font-weight: bold; 
+    margin-bottom: -15px;    
+    display: flex;
+    justify-content: center;
+}
+
+
+  .presents-text {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;      
   } 
-}
 
-@media (max-width: 768px) {
-  /* Adjust Second Logo */
-  #hero img:nth-of-type(2) {
-    margin-top: 20px !important;  /* Push it down */
-    width: 250px !important;  /* Adjust size */
-  }
   
-  /* Ensure "Presents" text is properly spaced */
-  #hero .presents-text {
-    margin-top: 15px !important;
-  }
-
-  /* Adjust Date Position */
-  #hero b {
-    display: block;
-    margin-top: 20px !important; 
-  }
+  /* Gateway Logo */
+  .gateway-logo {  
+    width: 43%;    
+    max-width: 220px; 
+    height: auto;      
+    margin-bottom: -70px; /* Reduce negative margin to prevent overlap */ 
 }
 
+  /* Sponsor Logos */
+  .sponsor-row {
+      display: flex;   
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;   
+  }
+
+  .sponsor {
+    width: 20%;    
+    margin-bottom: 10px;     
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .sponsor img { 
+      width: 33%;
+      max-width: 75px;       
+      height: auto; 
+  }
+
+  /* Event & Print Sponsors */
+  .event-sponsors, .print-sponsors {
+      display: flex;
+      justify-content: center; 
+      gap: 10px;
+  }
+
+  .event-sponsors img, .print-sponsors img {
+      width: 35%;
+      max-width: 110px; 
+  }
+
+} 
 
 /*---------------------------- ----------------------------------
 # Navigation Menu
